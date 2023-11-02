@@ -1319,6 +1319,9 @@ window.addEventListener('load', function(e) {
 
 
 window.onload = function(){
+	  if (window.location.protocol == 'https:'  ) {
+			window.location.replace("http://remoku.tv");
+		}
 	window.scrollTo(0, 1);
 	dbgOut = $("dbgOut");
 	//getBuild();
